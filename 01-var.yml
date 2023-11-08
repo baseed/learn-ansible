@@ -6,7 +6,7 @@
         msg: hello world
 - name: Demo on vars
   hosts: localhost
-  var:
+  vars:
     URL: example.com
   tasks:
     - name: print  a variable
