@@ -21,7 +21,7 @@
     - name: print  a task level variable
       ansible.builtin.debug:
         msg: "{{ URL }}"
-      var:
+      vars:
         msg: task.example.com
 
     - name: print  a play level variable
