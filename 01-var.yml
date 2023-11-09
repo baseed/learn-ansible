@@ -17,8 +17,12 @@
   vars:
     URL: play.example.com
   tasks:
-    - name: print  a variable
+    - name: print  a task level variable
       ansible.builtin.debug:
         msg: "{{ URL }}"
-      vars:
-        URL: task.example.com
+      var:
+        msg: task.example.com
+
+    - name: print  a play level variable
+      ansible.builtin.debug:
+        msg: "{{ URL }}"
