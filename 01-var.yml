@@ -12,6 +12,7 @@
     - name: print  a variable
       ansible.builtin.debug:
         msg: "{{ URL }}"
+
 - name: Demo on task level vars
   hosts: localhost
   vars:
