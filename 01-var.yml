@@ -29,5 +29,5 @@
         msg: "{{ URL }}"
 - name: Demo on roles variable
   hosts: localhost
-  vars:
+  roles:
     - demo
