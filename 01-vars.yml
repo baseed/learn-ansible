@@ -27,6 +27,7 @@
     - name: print  a play level variable
       ansible.builtin.debug:
         msg: "{{ URL }}"
+
 - name: Demo on roles variable
   hosts: localhost
   roles:
