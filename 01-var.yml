@@ -30,4 +30,4 @@
 - name: Demo on roles variable
   hosts: localhost
   roles:
-    - demo
+    - Demo
