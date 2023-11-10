@@ -4,10 +4,10 @@
     - name: Print Apple price
       ansible.builtin.debug:
         msg: Apple price is - 1$
-      when: fruit=="apple"
+      when: fruit == "apple"
 
 
     - name: Print Orange price
       ansible.builtin.debug:
         msg: Orange price is - 2$
-      when: fruit=="orange"
+      when: fruit == "orange"
