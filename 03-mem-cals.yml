@@ -5,7 +5,7 @@
      ansible.builtin.shell: free | grep Mem
      register: free
    - name: print free variable
-     ansible.builtin.debug:
+     ansible.builtin.set_fact:
       FREE: "{{ free.stdout | split(' ') }}"
    - name: set facts
      ansible.builtin.set_fact:
