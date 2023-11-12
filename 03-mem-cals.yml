@@ -28,5 +28,5 @@
 
    - name: Memory is Red
      ansible.builtin.debug:
-       msg: Memory orange
+       msg: Memory Red
      when:  used_mem used_mem |int > 100
