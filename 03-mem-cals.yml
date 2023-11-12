@@ -9,8 +9,8 @@
       FREE: "{{ free.stdout | split(' ') }}"
    - name: set facts
      ansible.builtin.set_fact:
-       total: "{{ FREE [1] }}"
-       free: "{{ FREE [3] }}"
+       total: "{{ FREE[1] }}"
+       free: "{{ FREE[3] }}"
        used_mem: "{{ 100-(free|int / total|int * 100) }}"
    - name: print free output
      ansible.builtin.debug:
