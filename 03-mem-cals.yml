@@ -32,6 +32,6 @@
 #     when:  used_mem |int > 70
 
     - name: Memory is Good
-      ansible_memory_mb:
+      ansible.builtin.debug:
         msg:  '{{ ansible_memory_mb["real"]["used"] }}'
      # when:  ansible_memory_mb["real"]["used"] | int < 50
