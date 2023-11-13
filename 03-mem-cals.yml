@@ -33,5 +33,5 @@
 
     - name: Memory is Good
       ansible_memory_mb:
-        msg:  '{{ ansible_memory_mb["real"]["used"] }}'
+        msg:  '{{ ansible_memory_mb["real"]}}'
           # when:  ansible_memory_mb["real"]["used"] | int < 50
