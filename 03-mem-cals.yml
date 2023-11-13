@@ -33,7 +33,7 @@
 
     - name: Memory is Good
       ansible.builtin.debug:
-        msg: '{{ ansible_memory_mb["real"] }}'
+        msg: Memory Good
       when: ansible_memory_mb["real"]["used"] / ansible_memory_mb["real"]["total"] * 100 | int < 50
     - name: Memory is orange
       ansible.builtin.debug:
