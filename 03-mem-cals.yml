@@ -6,7 +6,7 @@
      register: free
    - name: print free variable
      ansible.builtin.set_fact:
-      FREE: "{{ free.stdout | split(' ') }}"
+      FREE: "{{ 100 - free.stdout | split(' ') }}"
    - name: set fact
      ansible.builtin.set_fact:
       # total: "{{ FREE[1] }}"
