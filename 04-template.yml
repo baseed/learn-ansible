@@ -1,0 +1,4 @@
+- name: Teat on template
+  hosts: all
+  roles:
+    - demo
