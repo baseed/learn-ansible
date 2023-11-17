@@ -2,6 +2,6 @@
   ansible.builtin.debug:
     msg: "URL = {{ URL }}"
 - name: Copy files
-  ansible.builtin.copy:
+  ansible.builtin.template:
     src: test.txt
     dest: /tmp/test.txt
