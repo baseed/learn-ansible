@@ -1,2 +1,2 @@
 
- Hello {{ role_name }}
+ Hello {{ dirc_name }}
