@@ -1,4 +1,2 @@
 
- Hello Anabu
-
- "{{ role_name }}"
+ Hello {{ role_name }}
